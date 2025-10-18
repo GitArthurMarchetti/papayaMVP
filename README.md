@@ -28,35 +28,7 @@ To accelerate the development process, much of the core logic, particularly with
     * **Size & Quantity:** Set the dimensions (width, height) and the number of stickers to order.
 * **Dynamic Annotations:** The preview canvas includes annotations for width and height, updating in real-time.
 
-## 4. Project Structure
-
-The project follows the standard Next.js `app` directory structure. Below is a breakdown of the key files and folders.
-
-/app
-|-- /components/
-|   |-- /canvas/
-|   |   |-- PreviewCanvas.tsx   # Renders the design and cut lines.
-|   |-- /config-panel/
-|   |   |-- ConfigPanel.tsx     # Main container for all configuration options.
-|   |   |-- ProductShapeForm.tsx # Component for selecting product and shape.
-|   |   |-- SpacingOptions.tsx  # Component for adjusting cut line spacing.
-|   |-- DesignSideBar.tsx       # Manages uploading and selecting designs.
-|   |-- Header.tsx              # Application header.
-|   |-- PackageSelector.tsx     # UI for selecting quantity/price packages.
-|-- /hooks/
-|   |-- useDesigns.ts           # Custom hook for all design state management.
-|-- /lib/
-|   |-- canvas.ts               # Core logic for drawing on the HTML canvas.
-|   |-- imageProcessing.ts      # Algorithms for image analysis (finding edges, etc.).
-|   |-- constants.ts            # Shared constants (colors, fixed values).
-|-- /types/
-|   |-- index.ts                # TypeScript type definitions for the project.
-|-- globals.css                 # Global styles.
-|-- layout.tsx                  # Root layout of the application.
-|-- page.tsx                    # Main page component that assembles the UI.
-
-
-## 4. How It Works: A Deeper Dive
+## 4. How It Works
 
 ### 4.1. State Management (`useDesigns.ts`)
 
