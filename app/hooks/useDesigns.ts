@@ -23,8 +23,8 @@ export const useDesigns = () => {
         material: 'Vinyl',
         finish: 'Glossy',
         quantity: 50,
-        width: 10, // Valor padrão
-        height: 10, // Valor padrão
+        width: 10,
+        height: 10, 
       },
     };
 
